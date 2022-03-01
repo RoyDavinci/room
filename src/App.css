@@ -1,38 +1,164 @@
-.App {
-  text-align: center;
+header {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 50vh;
+	color: hsl(0, 0%, 100%);
+	position: relative;
+}
+@media screen and (min-width: 800px) {
+	header {
+		height: 80vh;
+		display: flex;
+	}
+	.list {
+		padding: 10px;
+	}
+	.list li {
+		display: inline-flex;
+		margin: 8px 10px;
+	}
+	.close {
+		display: none;
+	}
+	.section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 10px;
+	}
+	.header {
+		display: flex;
+		position: relative;
+	}
+	header {
+		flex: 0.68;
+	}
+	.section {
+		flex: 0.32;
+	}
+	.section-center .details {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.desktop-view,
+	.desktop-view:focus {
+		display: block;
+		position: absolute;
+		padding: 10px;
+		background-color: hsl(0, 0%, 0%);
+		display: flex;
+		position: absolute;
+		width: 12%;
+		bottom: 0;
+		right: 0;
+		justify-content: space-between;
+	}
+	header button,
+	.mobile-view {
+		display: none;
+	}
+	.MenuBar {
+		display: none;
+	}
+	.list {
+		display: block;
+	}
+}
+@media screen and (max-width: 799px) {
+	.desktop-view {
+		display: none;
+	}
+	.list {
+		background-color: hsl(0, 0%, 100%);
+		color: hsl(0, 0%, 0%);
+		width: 100%;
+		position: absolute;
+		top: 0;
+		height: 20%;
+		display: none;
+		justify-content: space-between;
+		align-items: center;
+		text-align: center;
+		padding: 10px;
+	}
+	.show {
+		display: flex;
+	}
+	.logo-container .logo {
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: -13px;
+		/* justify-content: center;
+		align-items: center; */
+		display: flex;
+	}
+}
+.details {
+	position: relative;
+}
+.background {
+	background-color: hsl(0, 0%, 63%);
+}
+.background-header {
+	background-image: linear-gradient(
+		to right,
+		rgba(161, 161, 161, 0.3),
+		rgba(161, 161, 161, 0.3)
+	);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header button,
+header button:focus {
+	padding: 10px;
+	background-color: hsl(0, 0%, 0%);
+	display: flex;
+	position: absolute;
+	width: 30%;
+	bottom: 0;
+	right: 0;
+	justify-content: space-between;
+}
+.logo-container {
+	padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.section-center {
+	padding: 20px;
+	/* font-size: 20px; */
+}
+.section-center h1,
+.section-center button,
+.section-center p {
+	margin: 10px 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.section-center button span {
+	letter-spacing: 0.6rem;
 }
-
-.App-link {
-  color: #61dafb;
+.section-center button img {
+	margin-left: 15px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+main {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+main article {
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+main article h1,
+main article p {
+	margin: 10px 0px;
+}
+main img {
+	height: 100%;
+	width: 100%;
 }
