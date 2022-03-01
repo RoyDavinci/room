@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/RoyDavinci/room)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://room-pearl.vercel.app/)
 
 ## My process
 
@@ -85,6 +85,6 @@ useEffect(() => {
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [Add your name here](https://room-pearl.vercel.app/)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/RoyDavinci)
 - Twitter - [@yourusername](https://twitter.com/roydavinci5)
